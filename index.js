@@ -80,12 +80,32 @@ const adicionarPet = (nome, tipo, idade, raca, peso, tutor, vacinado, servicos) 
             raca,peso,
             tutor,
             vacinado,
-            servicos,
+            servicos
         }
         pets.push(novoPet);
 }
 
-adicionarPet('garfield', 'cachoro', 1, 'pastor alemão', 15, 'marina', true, '');
+const darBanhoPet = (pet) => {
+    pet.servicos.push('banho');
+    console.log (`O serviço de banho foi realizado no ${pet.nome}.`);
+    
+
+}
+
+const tosarPet = (pet) => {
+    pet.servicos.push('tosa');
+    console.log (`O serviço de tosa foi realizado no ${pet.nome}.`);
+}
+
+const apararUnhasPet = (pet)=> {
+    pet.servicos.push('aparar unhas');
+    console.log (`O serviço de aparar unhas foi realizado no ${pet.nome}.`);
+
+ }
+adicionarPet('garfield', 'cachoro', 1, 'pastor alemão', 15, 'marina', true, []);
+darBanhoPet(pets[3]);
+apararUnhasPet(pets[3]);
+tosarPet(pets[3]);
 console.log(pets);
 
 
