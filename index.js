@@ -29,7 +29,8 @@ let pets = [{
     tutor: 'Brunna',
     vacinado: false,
     servicos: ['banho', 'corte de unha']
-}
+},
+
 
 
 ];
@@ -69,7 +70,12 @@ const campanhaVacina = ()=> {
     console.log(`${petsVacinados} foram vacinados nesta campanha!`);
 }
 
+listarPets();
+// vacinarPet(pet[0])
+
 campanhaVacina(pets);
+
+//console.log(pets)
 
 
 
